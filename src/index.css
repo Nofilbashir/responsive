@@ -1,13 +1,93 @@
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+:root{
+  --text_color:#484B5C;
+  --backgorund_color:#FFE602;
+  --btn_background_primary:#000000;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+small{
+  font-style: normal;
+font-weight: 900;
+font-size: 12px;
+line-height: 28px;
+}
+h1{
+  font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+}
+
+h3{
+  font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 48px;
+}
+h4{
+  font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 44px;
+}
+p{
+  font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+}
+
+
+h5{
+  font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+color: inherit;
+}
+button{
+  font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 22px;
+}
+
+
+.btn{
+  padding: 12px 64px;
+  background-color:var(--btn_background_primary) ;
+  color: white;
+
+}
+
+.secondary_btn{
+  padding: 12px 64px;
+  background-color: inherit;
+  color:black
+}
+
+
+img{
+  width: 100%;
+  object-fit: cover;
 }

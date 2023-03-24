@@ -1,0 +1,66 @@
+.banner{
+    display: flex;
+    flex-direction: row;
+}
+
+.banner_left{
+    width: 50%;
+    padding: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    background-color: var(--backgorund_color);
+}
+.banner_left_up{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.banner_left_up>button{
+    width: fit-content;
+}
+.banner_left_bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.logp_container{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.banner_right{
+    width: 50%;
+    overflow: hidden;
+}
+
+.banner_right>img{
+    object-fit: contain;
+    height: 100%;
+}
+
+.logo_div{
+    width: 5rem;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner_left{
+        width: 100%;
+    }
+
+    .banner_right{
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 650px) {
+    .banner_left{
+        padding: 2rem;
+    }
+}
